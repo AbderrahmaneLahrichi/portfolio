@@ -158,39 +158,11 @@
 /* Tablet portrait / iPad (900px and below) */
 @media (max-width: 900px) {
   .hero-split {
-    flex-direction: column;
-    text-align: center;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .hero-left h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-intro {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .cta-buttons {
-    justify-content: center;
-  }
-
-  .hero-graphic {
-    width: 280px;
-    height: 280px;
-  }
-}
-
-/* Small tablet / large phone (600px and below) */
-@media (max-width: 600px) {
-  .hero {
-    padding: 5rem 1.5rem 2rem;
-  }
-
-  .hero-left h1 {
-    font-size: 1.8rem;
-    white-space: normal;
+    font-size: 2rem;
   }
 
   .hero-intro {
@@ -198,8 +170,38 @@
   }
 
   .hero-graphic {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 160px;
+  }
+}
+
+/* Small tablet / large phone (600px and below) */
+@media (max-width: 600px) {
+  .hero {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .hero-split {
+    gap: 1rem;
+  }
+
+  .hero-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-photo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-intro {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-graphic {
+    width: 120px;
+    height: 110px;
   }
 
   .btn {
@@ -211,11 +213,11 @@
 /* Phone (400px and below) */
 @media (max-width: 400px) {
   .hero-left h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .hero-graphic {
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 80px;
   }
 }
