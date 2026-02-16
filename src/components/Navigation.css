@@ -14,8 +14,8 @@
   left: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
+  width: clamp(28px, 5vw, 50px);
+  height: clamp(28px, 5vw, 50px);
 }
 
 .navigation ul {
@@ -56,8 +56,6 @@
 
 @media (max-width: 900px) {
   .nav-shield {
-    width: 35px;
-    height: 35px;
     left: 1rem;
   }
 }
@@ -69,8 +67,6 @@
   }
 
   .nav-shield {
-    width: 28px;
-    height: 28px;
     left: 0.75rem;
   }
 
