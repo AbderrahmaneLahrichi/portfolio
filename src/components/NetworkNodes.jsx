@@ -4,9 +4,9 @@ import './NetworkNodes.css'
 function getNodeCount() {
   const w = window.innerWidth
   if (w <= 600) return 50
-  if (w <= 900) return 80
-  if (w <= 1200) return 120
-  return 180
+  if (w <= 900) return 100
+  if (w <= 1200) return 160
+  return 240
 }
 
 function getConnectionDistance() {
@@ -17,7 +17,7 @@ function NetworkNodes() {
   const canvasRef = useRef(null)
   const nodesRef = useRef([])
   const animRef = useRef(null)
-  const scrollOffsetRef = useRef(0)
+  const scrollRef = useRef(0)
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -25,14 +25,24 @@ function NetworkNodes() {
     let nodeCount = getNodeCount()
     let connDist = getConnectionDistance()
 
+    // Spread nodes across the full document height
+    const getPageHeight = () => {
+      return Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        window.innerHeight * 3
+      )
+    }
+
     const initNodes = (count) => {
+      const w = window.innerWidth
+      const totalH = getPageHeight()
       return Array.from({ length: count }, () => ({
-        x: Math.random() * window.innerWidth,
-        y: Math.random() * window.innerHeight,
+        x: Math.random() * w,
+        y: Math.random() * totalH,
         vx: (Math.random() - 0.5) * 0.3,
         vy: (Math.random() - 0.5) * 0.3,
-        r: Math.random() * 2.5 + 1.5,
-        depth: Math.random() * 0.4 + 0.1
+        r: Math.random() * 2.5 + 1.5
       }))
     }
 
@@ -57,55 +67,64 @@ function NetworkNodes() {
     window.addEventListener('resize', resize)
 
     const handleScroll = () => {
-      scrollOffsetRef.current = window.scrollY
+      scrollRef.current = window.scrollY
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
 
     const animate = () => {
       const w = window.innerWidth
       const h = window.innerHeight
-      const scroll = scrollOffsetRef.current
+      const scroll = scrollRef.current
+      const totalH = getPageHeight()
       ctx.clearRect(0, 0, w, h)
       const nodes = nodesRef.current
       const connDistSq = connDist * connDist
 
+      // Update positions — nodes float across the full page
       for (const node of nodes) {
         node.x += node.vx
         node.y += node.vy
         if (node.x < 0 || node.x > w) node.vx *= -1
-        if (node.y < 0 || node.y > h) node.vy *= -1
+        if (node.y < 0 || node.y > totalH) node.vy *= -1
       }
 
-      // Batch connections by similar opacity for fewer state changes
+      // Only process nodes visible in the current viewport (with buffer)
+      const viewTop = scroll - 200
+      const viewBottom = scroll + h + 200
+      const visible = []
+      for (const node of nodes) {
+        if (node.y >= viewTop && node.y <= viewBottom) {
+          visible.push(node)
+        }
+      }
+
+      // Draw connections between visible nodes
       ctx.lineWidth = 0.8
-      for (let i = 0; i < nodes.length; i++) {
-        const sy = nodes[i].y - scroll * nodes[i].depth
-        if (sy < -100 || sy > h + 100) continue
-        const sx = nodes[i].x
-        for (let j = i + 1; j < nodes.length; j++) {
-          const sjy = nodes[j].y - scroll * nodes[j].depth
-          if (sjy < -100 || sjy > h + 100) continue
-          const dx = sx - nodes[j].x
-          const dy = sy - sjy
+      for (let i = 0; i < visible.length; i++) {
+        const screenY_i = visible[i].y - scroll
+        const sx = visible[i].x
+        for (let j = i + 1; j < visible.length; j++) {
+          const screenY_j = visible[j].y - scroll
+          const dx = sx - visible[j].x
+          const dy = screenY_i - screenY_j
           const distSq = dx * dx + dy * dy
           if (distSq < connDistSq) {
             const opacity = (1 - Math.sqrt(distSq) / connDist) * 0.3
             ctx.beginPath()
-            ctx.moveTo(sx, sy)
-            ctx.lineTo(nodes[j].x, sjy)
+            ctx.moveTo(sx, screenY_i)
+            ctx.lineTo(visible[j].x, screenY_j)
             ctx.strokeStyle = `rgba(20, 184, 166, ${opacity})`
             ctx.stroke()
           }
         }
       }
 
-      // Draw nodes
+      // Draw visible nodes
       ctx.fillStyle = 'rgba(20, 184, 166, 0.4)'
-      for (const node of nodes) {
-        const sy = node.y - scroll * node.depth
-        if (sy < -50 || sy > h + 50) continue
+      for (const node of visible) {
+        const screenY = node.y - scroll
         ctx.beginPath()
-        ctx.arc(node.x, sy, node.r, 0, Math.PI * 2)
+        ctx.arc(node.x, screenY, node.r, 0, Math.PI * 2)
         ctx.fill()
       }
 
