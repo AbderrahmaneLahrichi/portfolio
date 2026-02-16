@@ -4,18 +4,9 @@
   width: 100%;
   background: rgba(17, 24, 39, 0.95);
   backdrop-filter: blur(10px);
-  padding: clamp(1rem, 2.5vw, 1.875rem) 2rem;
+  padding: 1.25rem 2rem;
   z-index: 1000;
   border-bottom: 1px solid var(--border-subtle);
-}
-
-.nav-shield {
-  position: absolute;
-  left: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: clamp(28px, 5vw, 50px);
-  height: clamp(28px, 5vw, 50px);
 }
 
 .navigation ul {
@@ -54,20 +45,9 @@
   color: var(--accent-primary);
 }
 
-@media (max-width: 900px) {
-  .nav-shield {
-    left: 1rem;
-  }
-}
-
 @media (max-width: 600px) {
   .navigation {
     padding: 0.75rem 1rem;
-    padding-left: 3rem;
-  }
-
-  .nav-shield {
-    left: 0.75rem;
   }
 
   .navigation ul {
