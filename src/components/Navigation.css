@@ -9,6 +9,15 @@
   border-bottom: 1px solid var(--border-subtle);
 }
 
+.nav-shield {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+}
+
 .navigation ul {
   list-style: none;
   display: flex;
