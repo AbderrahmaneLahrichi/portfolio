@@ -26,8 +26,8 @@ function Hero() {
             <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(20,184,166,0.08)" strokeWidth="1" />
             <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(20,184,166,0.06)" strokeWidth="1" />
             <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(20,184,166,0.04)" strokeWidth="1" />
-            <path d="M200 60 L320 110 L320 240 Q320 340 200 370 Q80 340 80 240 L80 110 Z" fill="rgba(20,184,166,0.06)" stroke="rgba(20,184,166,0.3)" strokeWidth="1.5" />
-            <path d="M200 90 L290 130 L290 230 Q290 310 200 340 Q110 310 110 230 L110 130 Z" fill="none" stroke="rgba(20,184,166,0.15)" strokeWidth="1" />
+            <path d="M200 60 L320 110 L320 240 Q320 340 200 370 Q80 340 80 240 L80 110 Z" fill="rgba(20,184,166,0.15)" stroke="rgba(20,184,166,0.5)" strokeWidth="2.5" />
+            <path d="M200 90 L290 130 L290 230 Q290 310 200 340 Q110 310 110 230 L110 130 Z" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.3)" strokeWidth="1.5" />
             <rect x="175" y="195" width="50" height="40" rx="4" fill="none" stroke="rgba(94,234,212,0.4)" strokeWidth="1.5" />
             <path d="M185 195 L185 175 Q185 160 200 160 Q215 160 215 175 L215 195" fill="none" stroke="rgba(94,234,212,0.4)" strokeWidth="1.5" />
             <circle cx="200" cy="210" r="5" fill="rgba(94,234,212,0.3)" />
