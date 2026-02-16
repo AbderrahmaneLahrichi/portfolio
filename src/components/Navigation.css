@@ -65,10 +65,13 @@
 @media (max-width: 600px) {
   .navigation {
     padding: 0.75rem 1rem;
+    padding-left: 3rem;
   }
 
   .nav-shield {
-    display: none;
+    width: 28px;
+    height: 28px;
+    left: 0.75rem;
   }
 
   .navigation ul {
