@@ -3,10 +3,12 @@ import './NetworkNodes.css'
 
 function getNodeCount() {
   const w = window.innerWidth
-  if (w <= 600) return 50
-  if (w <= 900) return 100
-  if (w <= 1200) return 160
-  return 240
+  const pages = Math.max(document.body.scrollHeight, window.innerHeight * 3) / window.innerHeight
+  const scale = Math.ceil(pages)
+  if (w <= 600) return 40 * scale
+  if (w <= 900) return 60 * scale
+  if (w <= 1200) return 80 * scale
+  return 100 * scale
 }
 
 function getConnectionDistance() {

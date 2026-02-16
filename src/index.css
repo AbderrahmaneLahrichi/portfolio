@@ -16,6 +16,10 @@
   --border-subtle: rgba(20, 184, 166, 0.15);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: var(--primary-bg);
