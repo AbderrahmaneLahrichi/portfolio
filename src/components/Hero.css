@@ -161,6 +161,13 @@
     gap: 2rem;
   }
 
+  .hero-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .hero-left h1 {
     font-size: 2rem;
   }
