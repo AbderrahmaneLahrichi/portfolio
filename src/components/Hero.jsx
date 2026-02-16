@@ -10,9 +10,6 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-split">
         <div className="hero-left">
-          <div className="hero-photo-wrapper">
-            <img src="/profile.jpg" alt="Abderrahmane Lahrichi" className="hero-photo" />
-          </div>
           <h1>{personalInfo.name}</h1>
           <p className="hero-intro">I love taking on new challenges and breaking down complex problems into simple, effective solutions. Security and IT are what I know best, but I'm always looking to grow and learn something new.</p>
           <div className="cta-buttons">
