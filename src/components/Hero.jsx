@@ -23,15 +23,17 @@ function Hero() {
         </div>
         <div className="hero-right">
           <svg className="hero-graphic" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="shield-clip">
+                <path d="M200 80 L300 120 L300 230 Q300 320 200 350 Q100 320 100 230 L100 120 Z" />
+              </clipPath>
+            </defs>
             <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(20,184,166,0.08)" strokeWidth="1" />
             <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(20,184,166,0.06)" strokeWidth="1" />
             <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(20,184,166,0.04)" strokeWidth="1" />
             <path d="M200 60 L320 110 L320 240 Q320 340 200 370 Q80 340 80 240 L80 110 Z" fill="rgba(20,184,166,0.15)" stroke="rgba(20,184,166,0.5)" strokeWidth="2.5" />
-            <path d="M200 90 L290 130 L290 230 Q290 310 200 340 Q110 310 110 230 L110 130 Z" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.3)" strokeWidth="1.5" />
-            <rect x="175" y="195" width="50" height="40" rx="4" fill="rgba(94,234,212,0.1)" stroke="rgba(94,234,212,0.7)" strokeWidth="2" />
-            <path d="M185 195 L185 175 Q185 160 200 160 Q215 160 215 175 L215 195" fill="none" stroke="rgba(94,234,212,0.7)" strokeWidth="2" />
-            <circle cx="200" cy="210" r="5" fill="rgba(94,234,212,0.6)" />
-            <rect x="198" y="213" width="4" height="10" rx="1" fill="rgba(94,234,212,0.6)" />
+            <image href="/profile.jpg" x="100" y="80" width="200" height="270" clipPath="url(#shield-clip)" preserveAspectRatio="xMidYMid slice" />
+            <path d="M200 60 L320 110 L320 240 Q320 340 200 370 Q80 340 80 240 L80 110 Z" fill="none" stroke="rgba(20,184,166,0.5)" strokeWidth="2.5" />
             <line x1="200" y1="60" x2="200" y2="40" stroke="rgba(20,184,166,0.2)" strokeWidth="1" />
             <circle cx="200" cy="38" r="3" fill="rgba(20,184,166,0.3)" />
             <line x1="320" y1="110" x2="350" y2="85" stroke="rgba(20,184,166,0.2)" strokeWidth="1" />
