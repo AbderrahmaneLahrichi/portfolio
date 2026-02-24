@@ -5,6 +5,7 @@ import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Learning from './components/Learning'
+import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackgroundAnimation from './components/BackgroundAnimation'
@@ -16,7 +17,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'experience', 'projects', 'skills', 'learning', 'contact']
+      const sections = ['home', 'experience', 'projects', 'skills', 'learning', 'about', 'contact']
       const scrollPosition = window.scrollY + 200
 
       for (const section of sections) {
@@ -45,6 +46,7 @@ function App() {
       <Projects />
       <Skills />
       <Learning />
+      <About />
       <Contact />
       <Footer />
     </div>

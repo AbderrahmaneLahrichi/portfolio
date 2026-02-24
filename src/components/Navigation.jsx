@@ -7,7 +7,8 @@ function Navigation({ activeSection }) {
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
-    { id: 'learning', label: 'Learning' }
+    { id: 'learning', label: 'Learning' },
+    { id: 'about', label: 'About' }
   ]
 
   return (
