@@ -53,13 +53,6 @@
   line-height: 1.1;
 }
 
-.hero-intro {
-  font-size: 1.15rem;
-  color: var(--text-secondary);
-  margin-bottom: 3rem;
-  line-height: 1.6;
-  max-width: 600px;
-}
 
 .cta-buttons {
   display: flex;
@@ -115,18 +108,14 @@
   color: var(--text-primary);
 }
 
-.hero-right {
-  flex: 0 0 auto;
-  align-self: center;
-}
-
 .hero-quote {
   background: rgba(20, 184, 166, 0.12);
   border: 1px solid rgba(20, 184, 166, 0.3);
   border-left: 4px solid var(--accent-primary);
   border-radius: 8px;
-  padding: 2rem 2.5rem;
-  max-width: 360px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
 }
 
 .hero-quote p {
