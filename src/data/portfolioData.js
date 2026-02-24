@@ -14,14 +14,14 @@ export const experiences = [
     company: 'Microsoft',
     location: 'Bellevue, WA',
     period: 'September 2024 - Present',
-    summary: 'Supported customer environments by enforcing security policies and compliance controls, driving incident remediation and cross-functional security improvements.',
+    summary: 'Operating at the intersection of security engineering and compliance in a regulated enterprise environment — translating policy requirements into operational controls.',
     responsibilities: [
-      'Applied and enforced state, federal, and organizational information security policies by configuring authentication standards and security controls',
-      'Conducted root cause analysis on complex incidents during on-call rotations, identifying recurring failures and driving lasting remediation',
-      'Collaborated with security specialists and cross-functional teams to assess emerging threats and implement proactive policy updates',
-      'Explained complex technical findings to both technical teams and leadership with clear, actionable recommendations'
+      'Administered Microsoft Purview compliance policies across enterprise customer environments, including data governance and access controls',
+      'Drove incident response and root cause analysis for complex security failures across Microsoft 365 environments',
+      'Partnered with cross-functional teams to translate emerging threats into M365 security policy updates',
+      'Delivered compliance posture assessments and risk recommendations to technical teams and executive leadership'
     ],
-    technicalSkills: ['Microsoft Entra ID', 'Azure AD', 'Conditional Access', 'MFA', 'PowerShell', 'ServiceNow', 'Splunk'],
+    technicalSkills: ['Microsoft Purview', 'Microsoft Entra ID', 'Azure AD', 'Conditional Access', 'MFA', 'PowerShell', 'ServiceNow', 'Splunk'],
     softSkills: ['Cross-functional Communication', 'Stakeholder Reporting', 'Policy Interpretation', 'Incident Leadership'],
     frameworks: ['FedRAMP', 'NIST 800-53'],
     frameworkNote: null
@@ -32,35 +32,33 @@ export const experiences = [
     company: 'Microsoft',
     location: 'Bellevue, WA',
     period: 'December 2023 - September 2024',
-    summary: 'Managed advanced endpoint escalations for enterprise customers, performing deep telemetry analysis and cross-team coordination.',
+    summary: 'Owned advanced escalation management across 300+ enterprise deployments, resolving complex endpoint failures through cross-team coordination and deep analysis.',
     responsibilities: [
-      'Managed Tier 2 and Tier 3 escalations across 300+ enterprise deployments while maintaining SLA compliance',
-      'Investigated complex endpoint issues through process, registry, network, and file telemetry analysis',
-      'Coordinated with network specialists, developers, and security teams to prevent recurring problems',
-      'Maintained IT systems across Windows clients and servers ensuring timely service delivery',
-      'Developed internal knowledge base documentation for recurring escalation patterns, reducing repeat Tier 2 ticket volume'
+      'Managed end-to-end Tier 2/3 escalations across 300+ enterprise Microsoft 365 deployments while maintaining SLA compliance',
+      'Coordinated with engineering, networking, and security teams to resolve root causes within M365 and endpoint environments',
+      'Investigated complex endpoint failures through telemetry, log analysis, and cross-system correlation',
+      'Built internal documentation that reduced repeat escalations and accelerated resolution across the team'
     ],
-    technicalSkills: ['Microsoft Defender for Endpoint', 'SCCM/MECM', 'Intune', 'Wireshark', 'Windows Event Logs', 'PowerShell'],
+    technicalSkills: ['Microsoft Defender for Endpoint', 'Microsoft 365', 'SCCM/MECM', 'Intune', 'Wireshark', 'Windows Event Logs', 'PowerShell'],
     softSkills: ['Escalation Management', 'Technical Documentation', 'Problem Solving', 'Team Coordination'],
     frameworks: [],
     frameworkNote: null
   },
   {
     id: 3,
-    title: 'Information Technology Customer Support',
+    title: 'IT Support Lead',
     company: 'Bellevue College',
     location: 'Bellevue, WA',
     period: 'December 2018 - December 2023',
-    summary: 'Provided comprehensive desktop support and identity management in a domain environment, handling system deployments and hardware lifecycle management.',
+    summary: 'Led IT support operations across an academic environment, supervising frontline staff and coordinating service delivery, hardware lifecycle, and institutional compliance.',
     responsibilities: [
-      'Provided desktop support by troubleshooting Windows systems, mobile devices, and peripherals in domain environments',
-      'Managed user access and authentication in Active Directory including permissions, MFA setup, and recovery',
-      'Deployed systems using SCCM for software distribution, patch management, and OS imaging',
-      'Collaborated with hardware asset team for end-of-life tracking and inventory management',
-      'Documented support procedures and onboarding workflows to streamline team knowledge transfer'
+      'Supervised lab assistants and Tier 1/2 support staff, setting direction on daily operations and escalation workflows',
+      'Served as the primary escalation point between frontline staff and senior IT administration',
+      'Coordinated hardware lifecycle and surplus inventory processes across multiple departments',
+      'Ensured staff adherence to institutional access control and data compliance standards'
     ],
     technicalSkills: ['Active Directory', 'SCCM', 'Group Policy', 'WSUS', 'Windows Desktop & Server', 'DHCP', 'DNS'],
-    softSkills: ['Customer Service', 'Knowledge Sharing', 'Time Management', 'Team Collaboration'],
+    softSkills: ['Team Supervision', 'Operational Coordination', 'Knowledge Transfer', 'Compliance Oversight'],
     frameworks: ['HIPAA', 'FERPA'],
     frameworkNote: null
   }
@@ -143,7 +141,7 @@ export const learningItems = [
   {
     id: 1,
     title: 'AZ-900: Azure Fundamentals',
-    progress: 70,
+    progress: 96,
     status: 'in-progress',
     completedDate: null,
     description: 'Microsoft Azure cloud fundamentals covering core services, security, privacy, compliance, and pricing.'
