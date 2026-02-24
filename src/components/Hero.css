@@ -30,8 +30,8 @@
 }
 
 .hero-photo-wrapper {
-  width: 237px;
-  height: 237px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid rgba(20, 184, 166, 0.3);
