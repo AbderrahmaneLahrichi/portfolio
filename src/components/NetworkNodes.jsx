@@ -111,7 +111,7 @@ function NetworkNodes() {
           const dy = screenY_i - screenY_j
           const distSq = dx * dx + dy * dy
           if (distSq < connDistSq) {
-            const opacity = (1 - Math.sqrt(distSq) / connDist) * 0.3
+            const opacity = (1 - Math.sqrt(distSq) / connDist) * 0.45
             ctx.beginPath()
             ctx.moveTo(sx, screenY_i)
             ctx.lineTo(visible[j].x, screenY_j)
@@ -122,7 +122,7 @@ function NetworkNodes() {
       }
 
       // Draw visible nodes
-      ctx.fillStyle = 'rgba(20, 184, 166, 0.4)'
+      ctx.fillStyle = 'rgba(20, 184, 166, 0.65)'
       for (const node of visible) {
         const screenY = node.y - scroll
         ctx.beginPath()
