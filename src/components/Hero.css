@@ -49,11 +49,33 @@
 }
 
 .hero-right h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1.25rem;
+  font-size: clamp(1.4rem, 5vw, 2.8rem);
+  margin-bottom: 0.5rem;
   color: var(--accent-primary);
   letter-spacing: 0.5px;
   line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+.hero-bio {
+  margin-bottom: 2.5rem;
+}
+
+.hero-bio p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 0.85rem;
+}
+
+.hero-bio p:last-child {
+  margin-bottom: 0;
 }
 
 .hero-quote {
@@ -116,6 +138,21 @@
   color: var(--primary-bg);
 }
 
+.btn-outline {
+  border-color: var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.btn-outline::before {
+  background: var(--border-subtle);
+}
+
+.btn-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .btn-secondary {
   border-color: var(--accent-muted);
   color: var(--accent-secondary);
@@ -140,20 +177,12 @@
   .hero-split {
     gap: 3rem;
   }
-
-  .hero-right h1 {
-    font-size: 2.4rem;
-  }
 }
 
 /* Tablet portrait / iPad (900px and below) */
 @media (max-width: 900px) {
   .hero-split {
     gap: 2rem;
-  }
-
-  .hero-right h1 {
-    font-size: 2rem;
   }
 
   .hero-quote p {
@@ -168,16 +197,15 @@
   }
 
   .hero-split {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 1.5rem;
   }
 
   .hero-photo-wrapper {
-    width: 120px;
-    height: 120px;
-  }
-
-  .hero-right h1 {
-    font-size: 1.5rem;
+    width: 140px;
+    height: 140px;
   }
 
   .hero-quote {
@@ -196,8 +224,9 @@
 
 /* Phone (400px and below) */
 @media (max-width: 400px) {
-  .hero-right h1 {
-    font-size: 1.25rem;
+  .hero-photo-wrapper {
+    width: 110px;
+    height: 110px;
   }
 
   .hero-quote {
