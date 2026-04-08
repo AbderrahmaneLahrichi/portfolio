@@ -15,6 +15,14 @@ export const education = [
     school: 'University of Washington',
     location: 'Seattle, WA',
     graduated: 'December 2021'
+  },
+  {
+    id: 2,
+    degree: "Associate's Degree",
+    field: 'Electrical, Electronics and Communications Engineering',
+    school: 'Bellevue College',
+    location: 'Bellevue, WA',
+    graduated: 'June 2019'
   }
 ]
 
@@ -86,7 +94,7 @@ export const experiences = [
   },
   {
     id: 3,
-    title: 'IT Support Lead',
+    title: 'IT Customer Support',
     company: 'Bellevue College',
     location: 'Bellevue, WA',
     period: 'December 2018 - December 2023',
