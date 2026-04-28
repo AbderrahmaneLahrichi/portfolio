@@ -67,6 +67,13 @@
   font-size: 0.85rem;
 }
 
+.card-period {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.75;
+}
+
 .experience-card .summary {
   color: var(--text-secondary);
   font-size: 0.95rem;

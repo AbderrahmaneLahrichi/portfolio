@@ -26,6 +26,7 @@ function Experience() {
           >
             <h3>{exp.title}</h3>
             <div className="company">{exp.company}</div>
+            <div className="card-period">{exp.period}</div>
             <p className="summary">{exp.summary}</p>
             <span className="card-hint">Click for details</span>
           </div>

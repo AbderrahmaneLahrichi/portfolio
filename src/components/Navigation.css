@@ -45,6 +45,23 @@
   color: var(--accent-primary);
 }
 
+.nav-docs-link {
+  color: var(--accent-primary) !important;
+  border: 1px solid var(--border-subtle);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s ease !important;
+}
+
+.nav-docs-link:hover {
+  background: rgba(20, 184, 166, 0.1);
+  border-color: var(--accent-primary) !important;
+}
+
+.nav-docs-link::after {
+  display: none !important;
+}
+
 @media (max-width: 600px) {
   .navigation {
     padding: 0.75rem 1rem;
