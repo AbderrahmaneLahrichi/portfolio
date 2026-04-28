@@ -28,6 +28,29 @@ export const education = [
 
 export const experiences = [
   {
+    id: 4,
+    title: 'Founder',
+    company: 'Grali',
+    location: 'Bellevue, WA',
+    period: 'September 2025 - Present',
+    summary: 'Founded Grali, an AI-powered security implementation tool that generates prescriptive, phase-based roadmaps from a declarative questionnaire about an organization\'s existing stack.',
+    responsibilities: [
+      'Conceived and designed Grali, a security implementation tool for IT leads and security admins generating prescriptive, phase-based roadmaps from their existing stack.',
+      'Designed the 9-step questionnaire covering identity, cloud, endpoints, network, SIEM, AppSec, and data protection — using real product names, not capability abstractions.',
+      'Defined the AI output format and constraints: implementation guides a team can execute, not gap analyses. Iterated on the prompt until outputs matched production-grade expectations.',
+      'Validated recommendations against real enterprise environments from prior Microsoft work to ensure the tool produces actionable guidance, not generic advice.'
+    ],
+    technicalSkills: [
+      'Prompt Engineering',
+      'AI-Assisted Development',
+      'Product Design',
+      'Security Architecture'
+    ],
+    softSkills: ['Product Vision', 'Requirements Definition', 'Domain Validation'],
+    frameworks: [],
+    frameworkNote: null
+  },
+  {
     id: 1,
     title: 'Security and Compliance Engineer',
     company: 'Microsoft',
@@ -743,6 +766,7 @@ DeviceTvmSecureConfigurationAssessment
 export const learningItems = [
   {
     id: 1,
+    group: 'microsoft',
     title: 'AZ-900: Microsoft Azure Fundamentals',
     progress: 100,
     status: 'completed',
@@ -752,10 +776,22 @@ export const learningItems = [
   },
   {
     id: 2,
+    group: 'microsoft',
+    title: 'SC-200: Microsoft Security Operations Analyst',
+    progress: 66,
+    status: 'in-progress',
+    completedDate: null,
+    description: 'Over halfway through the SC-200 material. Core focus: Microsoft Sentinel, Defender for Endpoint, Defender for Office 365, KQL threat hunting, and incident response — tools I used daily in production at Microsoft.',
+    badgeUrl: 'https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg'
+  },
+  {
+    id: 3,
+    group: 'comptia',
     title: 'CompTIA Security+ (SY0-701)',
     progress: 75,
     status: 'in-progress',
     completedDate: null,
-    description: 'Studying for the SY0-701 exam. Working through practice tests before scheduling.'
+    description: 'Studying CompTIA\'s vendor-neutral security certification covering threat analysis, cryptography, network security, and compliance frameworks. Complements my Microsoft stack depth with broader industry fundamentals.',
+    badgeUrl: 'https://images.credly.com/images/d3cb5ac3-8bd2-471a-a27c-f447bf16da47/blob'
   }
 ]
