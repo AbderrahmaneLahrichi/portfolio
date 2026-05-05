@@ -150,6 +150,10 @@ export const experiences = [
     location: 'Bellevue, WA',
     period: 'December 2018 - December 2023',
     summary: 'Led 20+ student technicians providing Tier 1/2 IT support campus-wide. SCCM deployment, Active Directory administration, and escalation resolution.',
+    resumeBullets: [
+      'Managed 20+ student technicians providing Tier 1/2 IT support across campus.',
+      'Deployed Windows workstations via SCCM, managed macOS with Jamf Pro, and administered Active Directory.'
+    ],
     responsibilities: [
       'Managed 20+ student technicians providing Tier 1/2 IT support across campus.',
       'Oversaw three lab environments: hardware setup, software deployment, and device lifecycle.',
