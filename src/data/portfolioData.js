@@ -60,6 +60,11 @@ export const experiences = [
     location: 'Bellevue, WA',
     period: 'September 2024 - August 2025',
     summary: 'One of three founding engineers on the Security and Compliance practice. Subject Matter Expert for Defender for Office 365 and Purview.',
+    resumeBullets: [
+      'Founding engineer on Microsoft\'s Security and Compliance practice. Built escalation workflows and playbooks as the team grew from 3 to 20+ engineers.',
+      'Investigated phishing, malware, and BEC incidents daily using Threat Explorer, Message Trace, and Advanced Hunting. Configured anti-phishing, Safe Attachments, Safe Links, and DMARC/DKIM/SPF across GCC and GCC High tenants.',
+      'Configured DLP policies, sensitivity labels, retention policies, and insider risk management in Purview for FedRAMP, NIST, HIPAA, and PCI-DSS environments.'
+    ],
     responsibilities: [
       'Founding engineer on the Security and Compliance practice at Microsoft. Built team processes, escalation paths, and playbooks from scratch as the team grew from 3 to 20+ engineers.',
       'SME for Microsoft Defender for Office 365 and Microsoft Purview. Primary escalation contact for complex MDO and Purview cases across GCC and GCC High tenants.',
