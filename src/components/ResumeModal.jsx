@@ -72,7 +72,7 @@ function ResumeModal({ onClose }) {
                   <span className="resume-period">{exp.period}</span>
                 </div>
                 <ul className="resume-bullets">
-                  {exp.responsibilities.map((r, i) => (
+                  {(exp.resumeBullets || exp.responsibilities).map((r, i) => (
                     <li key={i}>{r}</li>
                   ))}
                 </ul>
