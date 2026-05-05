@@ -105,6 +105,11 @@ export const experiences = [
     location: 'Bellevue, WA',
     period: 'December 2023 - September 2024',
     summary: 'Subject Matter Expert for Microsoft Defender for Endpoint. Tier 2/3 escalations, internal playbooks, and KQL threat hunting across GCC and GCC High.',
+    resumeBullets: [
+      'Investigated active endpoint incidents alongside customers: device logs, network traces, KQL hunting in Advanced Hunting, and suspicious file triage through MDE.',
+      'Deployed all 19 ASR rules via Intune, Group Policy, and PowerShell. Ran Live Response sessions for forensic collection and remediation. Created custom IoC indicators for threat containment.',
+      'Administered Intune endpoint security policies across GCC and GCC High tenants: Defender Antivirus, Firewall, disk encryption, compliance policies, and Conditional Access.'
+    ],
     responsibilities: [
       'Investigated active endpoint incidents with customers: collected device logs from Event Viewer, captured network traces, ran KQL hunts in Advanced Hunting, and triaged suspicious files through MDE.',
       'Walked customers through alerts they received: explained triggers, detonation results, and verdicts, then guided remediation.',
