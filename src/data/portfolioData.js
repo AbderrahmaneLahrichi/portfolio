@@ -34,6 +34,9 @@ export const experiences = [
     location: 'Bellevue, WA',
     period: 'September 2025 - Present',
     summary: 'Founded Grali, an AI-powered security implementation tool that generates prescriptive, phase-based roadmaps from a declarative questionnaire about an organization\'s existing stack.',
+    resumeBullets: [
+      'Founded Grali, an AI-powered tool that generates prescriptive, phase-based security implementation roadmaps from an organization\'s existing stack.'
+    ],
     responsibilities: [
       'Conceived and designed Grali, a security implementation tool for IT leads and security admins generating prescriptive, phase-based roadmaps from their existing stack.',
       'Designed the 9-step questionnaire covering identity, cloud, endpoints, network, SIEM, AppSec, and data protection — using real product names, not capability abstractions.',
