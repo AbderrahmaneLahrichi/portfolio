@@ -96,6 +96,22 @@ function ResumeModal({ onClose }) {
           </section>
 
           <section className="resume-section">
+            <h2>Certifications</h2>
+            {learningItems.map(cert => (
+              <div key={cert.id} className="resume-edu-item">
+                <div className="resume-exp-header">
+                  <div>
+                    <span className="resume-job-title">{cert.title}</span>
+                  </div>
+                  <span className="resume-period">
+                    {cert.status === 'completed' ? cert.completedDate : 'In Progress'}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </section>
+
+          <section className="resume-section">
             <h2>Skills</h2>
             <div className="resume-skills">
               {coreSkills.map((skill, i) => (
