@@ -262,6 +262,14 @@ export const skillCategories = [
 
 export const projects = [
   {
+    id: 4,
+    title: 'Grali',
+    description: 'An AI-powered security implementation tool that generates prescriptive, phase-based roadmaps from a declarative questionnaire about an organization\'s existing stack. Covers identity, cloud, endpoints, network, SIEM, AppSec, and data protection with implementation guides a team can execute, not gap analyses.',
+    technologies: ['React', 'FastAPI', 'Claude API', 'Prompt Engineering', 'Security Architecture'],
+    github: null,
+    slug: null
+  },
+  {
     id: 3,
     title: 'M365 Automation Module',
     description: 'A PowerShell module for automating Microsoft 365 user lifecycle management using the Microsoft Graph SDK. Covers onboarding, offboarding, license reporting, and inactive account audits.',

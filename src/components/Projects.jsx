@@ -37,9 +37,11 @@ function Projects() {
                   View Project &rarr;
                 </Link>
               )}
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                GitHub &rarr;
-              </a>
+              {project.github && (
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                  GitHub &rarr;
+                </a>
+              )}
             </div>
           </div>
         ))}
