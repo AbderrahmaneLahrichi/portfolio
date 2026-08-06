@@ -30,7 +30,7 @@ export const experiences = [
   {
     id: 1,
     title: 'Security and Compliance Engineer',
-    company: 'LTIMindtree',
+    company: 'MindTree',
     location: 'Bellevue, WA',
     period: 'September 2024 - August 2025',
     summary: 'One of three founding engineers on the Security and Compliance practice. Subject Matter Expert for Defender for Office 365 and Purview.',
