@@ -30,7 +30,7 @@ export const experiences = [
   {
     id: 1,
     title: 'Security and Compliance Engineer',
-    company: 'MindTree',
+    company: 'LTIMindtree',
     location: 'Bellevue, WA',
     period: 'September 2024 - August 2025',
     summary: 'One of three founding engineers on the Security and Compliance practice. Subject Matter Expert for Defender for Office 365 and Purview.',
@@ -75,7 +75,7 @@ export const experiences = [
   {
     id: 2,
     title: 'Endpoint Security Engineer',
-    company: 'MindTree',
+    company: 'LTIMindtree',
     location: 'Bellevue, WA',
     period: 'December 2023 - September 2024',
     summary: 'Subject Matter Expert for Microsoft Defender for Endpoint. Tier 2/3 escalations, internal playbooks, and KQL threat hunting across GCC and GCC High.',
