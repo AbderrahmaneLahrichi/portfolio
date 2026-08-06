@@ -795,7 +795,7 @@ export const learningItems = [
     progress: 66,
     status: 'in-progress',
     completedDate: null,
-    description: 'Over halfway through the SC-200 material. Core focus: Microsoft Sentinel, Defender for Endpoint, Defender for Office 365, KQL threat hunting, and incident response — tools I used daily in production at Microsoft.',
+    description: 'Over halfway through the SC-200 material. Core focus: Microsoft Sentinel, Defender for Endpoint, Defender for Office 365, KQL threat hunting, and incident response — tools I used daily in production at LTIMindtree.',
     badgeUrl: 'https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg'
   },
   {
