@@ -75,7 +75,7 @@ export const experiences = [
   {
     id: 2,
     title: 'Endpoint Security Engineer',
-    company: 'Microsoft',
+    company: 'LTIMindtree',
     location: 'Bellevue, WA',
     period: 'December 2023 - September 2024',
     summary: 'Subject Matter Expert for Microsoft Defender for Endpoint. Tier 2/3 escalations, internal playbooks, and KQL threat hunting across GCC and GCC High.',
