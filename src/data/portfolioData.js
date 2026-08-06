@@ -40,7 +40,7 @@ export const experiences = [
       'Configured DLP policies, sensitivity labels, retention policies, and insider risk management in Purview for FedRAMP, NIST, HIPAA, and PCI-DSS environments.'
     ],
     responsibilities: [
-      'Founding engineer on the Security and Compliance practice at Microsoft. Built team processes, escalation paths, and playbooks from scratch as the team grew from 3 to 20+ engineers.',
+      'Founding engineer on the Security and Compliance practice at LTIMindtree. Built team processes, escalation paths, and playbooks from scratch as the team grew from 3 to 20+ engineers.',
       'SME for Microsoft Defender for Office 365 and Microsoft Purview. Primary escalation contact for complex MDO and Purview cases across GCC and GCC High tenants.',
       'Investigated phishing, malware, and BEC incidents daily using Threat Explorer, Email entity page, Message Trace, and Advanced Hunting across EmailEvents, EmailAttachmentInfo, UrlClickEvents, and CloudAppEvents.',
       'Configured and validated anti-phishing policies, Safe Attachments, Safe Links, and DMARC/DKIM/SPF across enterprise M365 tenants. Managed Tenant Allow/Block List and quarantine policies.',
