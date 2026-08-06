@@ -38,7 +38,7 @@ function ResumeModal({ onClose }) {
       <div className="resume-modal-container">
         <div className="resume-modal-actions">
           <a
-            href="/Abderrahmane%20Lahrichi%20_%20Resume.pdf"
+            href="/Abderrahmane%20Lahrichi_Resume.pdf"
             download="Abderrahmane Lahrichi Resume.pdf"
             className="resume-download-btn"
           >
